@@ -1,0 +1,244 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ToText - Extract Text from Images. Speech Recognition from Audio and Video. Sentiment Analysis and Language Detection.">
+    <meta name="author" content="Chirag Khatri">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicon/apple-touch-icon-57x57.png' %}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/favicon/apple-touch-icon-60x60.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favicon/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favicon/apple-touch-icon-76x76.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favicon/apple-touch-icon-114x114.png' %}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/favicon/apple-touch-icon-120x120.png' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favicon/apple-touch-icon-144x144.png' %}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{% static 'img/favicon/apple-touch-icon-152x152.png' %}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon-180x180.png' %}">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon/favicon-194x194.png' %}" sizes="194x194">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon/favicon-96x96.png' %}" sizes="96x96">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon/android-chrome-192x192.png' %}" sizes="192x192">
+	<link rel="icon" type="image/png" href="{% static 'img/favicon/favicon-16x16.png' %}" sizes="16x16">
+	<link rel="manifest" href="{% static 'img/favicon/manifest.json' %}">
+	<link rel="mask-icon" href="{% static 'img/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+	<link rel="shortcut icon" href="{% static 'img/favicon/favicon.ico' %}">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="{% static 'img/favicon/mstile-144x144.png' %}">
+	<meta name="msapplication-config" content="{% static 'img/favicon/browserconfig.xml' %}">
+	<meta name="theme-color" content="#ffffff">
+
+    <title>ToText - Image, Audio, Video To Text.</title>
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/freelancer.css" %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static "font-awesome/css/font-awesome.css" %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">ToText</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#extract">Extract</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#footer">Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<img class="img-responsive" src="{% static "img/profile.png" %}" alt="">
+                    -->
+                    <i class="fa fa-file-text fa-10x"></i>&nbsp; &nbsp;<i class="fa fa-search-plus fa-10x"></i>
+                    <br><br><br><br>
+                    </script>
+                    <div class="intro-text">
+                        <span class="name">Extract Text & Analyze</span>
+                        <hr class="star-light">
+                        <span class="skills">Sentiment Analysis - Language Detection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- extract Grid Section -->
+    <section id="extract">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Extract</h2> text  from...
+                    <hr class="star-primary">
+					<div>
+					</div>
+                </div>
+            </div>
+            
+                <div class="row">
+                    <div class="col-sm-4 extract-item">
+                        <a href="{% url 'image_input_view' %}" class="extract-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h2>Image</h2>
+                                </div>
+                            </div>
+                            <img src="{% static "img/extract/cabin.png" %}" class="img-responsive" alt="Image">
+                            <!--<i class="fa fa-picture-o fa-10x"></i>-->
+                        </a>
+                    </div>
+                    <div class="col-sm-4 extract-item">
+                        <a href="{% url 'audio_input_view' %}" class="extract-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h2>Audio</h2>
+                                </div>
+                            </div>
+                            <img src="{% static "img/extract/cake.png" %}" class="img-responsive" alt="Audio">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 extract-item">
+                        <a href="{% url 'video_input_view' %}" class="extract-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h2>Video</h2>
+                                </div>
+                            </div>
+                            <img src="{% static "img/extract/circus.png" %}" class="img-responsive" alt="Video">
+                        </a>
+                    </div>   
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p style="text-align:center">ToText converts anything <i>to text</i>.</p>
+                    <p>ToText helps you transform your images into text, perform Speech Recognition on your audio and video files.<p> <p>Think that's cool? There's more...</p> <p>You can play with the extracted text - Do Sentiment Analysis, Detect the language of the text.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ 
+    <footer id="footer" class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="footer-col col-md-4">
+                        <h3>Powered By</h3>
+                        <a href="https://www.havenondemand.com/" target="_blank"> <img src="{% static "img/haven.jpg" %}" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Made By</h3>
+                        <p><strong>Chirag Khatri</strong><br></p>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/in/khatrichirag" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Terms and Conditions</h3>
+                        <p style="text-align:justify">By using ToText, you acknowledge that you have read and understood, and that you agree to all the <a href="{% url 'terms' %}"> Terms of Service. </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        2015 &copy; ToText
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{% static "js/classie.js" %}"></script>
+    <script src="{% static "js/cbpAnimatedHeader.js" %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "js/freelancer.js" %}"></script>
+
+</body>
+
+</html>
