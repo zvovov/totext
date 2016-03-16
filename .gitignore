@@ -4,5 +4,7 @@
 __pycache__/
 noshare/
 static/
+apicall/static/
+apicall/templates/
 !apicall/static/
 db.sqlite3
